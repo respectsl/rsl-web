@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="refresh" content="21600">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-33SEFYBZ3E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-33SEFYBZ3E');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixtures</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+</head>
+<script src="nav.js"></script>
+<body>
+    <header class="header2" id="sticky-header">
+        <h1>FIXTURES</h1>
+        <button class="menu-toggle" id="menuToggle">
+            ☰ <span>Menu</span> ⚽
+        </button>
+        <nav>
+            <ul>
+                <li class="always-show"><a href="./">🏠 HOME</a></li>
+                <li class="always-show"><a href="./fixtures">📅 FIXTURES</a></li>
+              
+                <li class="menu-only"><a href="./rules">📜 RULES</a></li>
+              
+                <li class="menu-only">
+                    <select id="myDropdown">
+                        <option value="" selected disabled>🏆 POINTS</option>
+                      
+                        <optgroup label="2026 (Current)">
+                          <option value="./league_points">League</option>
+                        </optgroup>
+                      
+                        <optgroup label="Archive - 2024">
+                          <option value="./archive/2024_league_points">League</option>
+                          <option value="./archive/2024_group_a_points">Group A</option>
+                          <option value="./archive/2024_group_b_points">Group B</option>
+                        </optgroup>
+                      
+                        <optgroup label="Archive - 2023">
+                          <option value="./archive/2023">League</option>
+                        </optgroup>
+                    </select>
+                </li>
+              
+                <li class="menu-only"><a href="./teams">👥 TEAMS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 
+            example of how to use different class
+            1) when the games are on a future date:
+            <section class="fixtures">
+                <h2>Week #<PUT WEEK #></h2>
+                <table>
+
+            2) when the games are compeleted:
+            <section class="done">
+                <h2>Week #<PUT WEEK #</h2>
+                <table class="donetable">
+
+            3) when on the current week
+            <section class="current">
+                <h2>Week #<PUT WEEK #</h2>
+                <table class="currenttable">
+        -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>Fixtures</h2>
+        <section class="fixtures">
+            <h2>EXAMPLE</h2>
+            <table class="">
+                <tr>
+                    <th>🏟️ Home</th>
+                    <th>📅 Dates</th>
+                    <th>🚌 Away</th>
+                </tr>
+                <tr>
+                    <th colspan="3">Tuesday - 10/17/2023</th>
+                </tr>
+                <!-- Friendly Week -->
+                <tr>
+                    <td>🇺🇦 Divenate FC</td>
+                    <td> 2 - 3 </td>
+                    <td>🇹🇷 Samanyolu FC</td>
+                </tr>
+                <tr>
+                    <td>🇲🇦 Maghreb FC</td>
+                    <td> 6 - 7 </td>
+                    <td>⚡ El Clasico FC</td>
+                </tr>
+                <tr>
+                    <th colspan="3">Thursday - 10/19/2023</th>
+                </tr>
+                <tr>
+                    <td>𓅃 Hungry Hawks FC</td>
+                    <td> TBD </td>
+                    <td>🦅 Allentown Eagles FC</td>
+                </tr>
+                <tr>
+                    <td>🎯 MC FC</td>
+                    <td> TBD </td>
+                    <td>🐬 Blue Dolphins FC</td>
+                </tr>
+            </table>
+        </section>
