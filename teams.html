@@ -66,40 +66,8 @@
                         <th>TEAMS</th>
                     </tr>                    
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <th>🐊 ATLANTIC FC</th>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <th>💫 JEI FC</th>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <th>🦅 AL-HATEM FC</th>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <th>👵 BIBI FC</th>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <th>🐬 BLUE DOLPHINS FC</th>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <th>🐅 TIGERS FC</th>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <th>⚽️ MEDINA FC</th>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <th>⚔️ Team 8 FC</th>
-                    </tr>
-                </tbody>
+                <tbody id="teams-table-body">
+                    </tbody>
             </table>
         </section>
     </main>
@@ -107,5 +75,34 @@
     <footer>
         <!-- Footer content -->
     </footer>
+
+    <script>
+        fetch('/data/teams.json')
+            .then(response => {
+                if (!response.ok) throw new Error("Could not load teams.json");
+                return response.json();
+            })
+            .then(data => {
+                const tbody = document.getElementById('teams-table-body');
+                let html = '';
+
+                // Loop through each team and create a row
+                // The 'index' automatically counts starting from 0, so we do index + 1 for the numbers
+                data.teams.forEach((team, index) => {
+                    html += `
+                    <tr>
+                        <td>${index + 1}</td>
+                        <th>${team.name}</th>
+                    </tr>`;
+                });
+
+                // Inject the generated rows into the table body
+                tbody.innerHTML = html;
+            })
+            .catch(error => {
+                console.error("Error loading teams:", error);
+                document.getElementById('teams-table-body').innerHTML = `<tr><td colspan="2">Error loading teams.</td></tr>`;
+            });
+    </script>
 </body>
 </html>

@@ -1,0 +1,49 @@
+{
+  "weeks": [
+    {
+      "week": "Week 1",
+      "days": [
+        {
+          "dateHeader": "TBD",
+          "games": [
+            {
+              "home": "🐊 ATLANTIC FC",
+              "homeScore": "TBD",
+              "awayScore": "TBD",
+              "away": "💫 JEI FC"
+            },
+            {
+              "home": "🦅 AL-HATEM FC",
+              "homeScore": "TBD",
+              "awayScore": "TBD",
+              "away": "👵 BIBI FC"
+            }
+          ]
+        },
+        {
+          "dateHeader": "TBD",
+          "games": [
+            {
+              "home": "⚽️ Medina FC",
+              "homeScore": "TBD",
+              "awayScore": "TBD",
+              "away": "🐬 Blue Dolphins FC"
+            },
+            {
+              "home": "🟢 GREEN KNIGHTS FC",
+              "homeScore": "TBD",
+              "awayScore": "TBD",
+              "away": "☪️ BABO FC"
+            },
+            {
+              "home": "🐅 TIGERS FC",
+              "homeScore": "TBD",
+              "awayScore": "TBD",
+              "away": "🐅 TIGERS FC"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
