@@ -23,7 +23,7 @@ function renderFixtures(data) {
                 </tr>
                 <tr>
                     <th style="background-color: #c5e1ed;">🏟️ Home</th>
-                    <th style="background-color: #c5e1ed;">📅 Dates</th>
+                    <th style="background-color: #c5e1ed;">📅 Dates/Scores</th>
                     <th style="background-color: #c5e1ed;">🚌 Away</th>
                 </tr>
             </thead>

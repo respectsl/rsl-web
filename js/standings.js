@@ -66,7 +66,7 @@ function renderStandings(standings) {
     <table class="fixtures-table standings-table">
         <thead>
             <tr class="week-title-row">
-                <th colspan="9">LEAGUE STANDINGS</th> </tr>
+                <th colspan="9">LEAGUE STANDINGS - 2026</th> </tr>
             <tr>
                 <th class="col-team">Team</th>
                 <th class="col-stat">P</th>
