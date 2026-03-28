@@ -38,9 +38,20 @@ function renderFixtures(data) {
 
             // Add each Game
             day.games.forEach(game => {
-                const scoreDisplay = (game.homeScore === "TBD") 
-                    ? "TBD" 
-                    : `${game.homeScore} - ${game.awayScore}`;
+                let scoreDisplay = "";
+
+                // Check if it's a BYE week first
+                if (game.homeScore === "BYE" || game.awayScore === "BYE") {
+                    scoreDisplay = "BYE WEEK";
+                } 
+                // Otherwise check for TBD
+                else if (game.homeScore === "TBD") {
+                    scoreDisplay = "TBD";
+                } 
+                // Otherwise show the actual score
+                else {
+                    scoreDisplay = `${game.homeScore} - ${game.awayScore}`;
+                }
                 
                 html += `
                 <tr class="game-row">

@@ -6,8 +6,15 @@ fetch('/data/fixtures.json')
   data.weeks.forEach(week => {
     week.days.forEach(day => {
       day.games.forEach(game => {
-        // Skip games that are not played yet (TBD)
-        if (game.homeScore === "TBD" || game.awayScore === "TBD") return;
+        // Skip if TBD OR if it's a BYE week
+        if (
+          game.homeScore === "TBD" || 
+          game.awayScore === "TBD" || 
+          game.homeScore === "BYE" || 
+          game.awayScore === "BYE"
+        ) {
+          return; 
+        }
 
         const hScore = parseInt(game.homeScore);
         const aScore = parseInt(game.awayScore);

@@ -511,3 +511,10 @@ header {
         padding: 3px !important;
     }
 }
+
+/* Add this to your CSS file */
+.score:contains("BYE") {
+    color: #e92106;
+    font-style: italic;
+    font-size: 0.85rem;
+}
