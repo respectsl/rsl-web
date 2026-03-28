@@ -37,9 +37,54 @@
             },
             {
               "home": "🐅 TIGERS FC",
-              "homeScore": "TBD",
+              "homeScore": "BYE WEEK",
               "awayScore": "TBD",
               "away": "🐅 TIGERS FC"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": "Week 2",
+      "days": [
+        {
+          "dateHeader": "TBD",
+          "games": [
+            {
+              "home": "☪️ BABO FC",
+              "homeScore": "3",
+              "awayScore": "3",
+              "away": "⚽️ MEDINA FC"
+            },
+            {
+              "home": "🐅 TIGERS FC",
+              "homeScore": "8",
+              "awayScore": "7",
+              "away": "🐊 ATLANTIC FC"
+            }
+          ]
+        },
+        {
+          "dateHeader": "TBD",
+          "games": [
+            {
+              "home": "🐬 BLUE DOLPHINS FC",
+              "homeScore": "2",
+              "awayScore": "5",
+              "away": "👵 BIBI FC"
+            },
+            {
+              "home": "💫 JEI FC",
+              "homeScore": "1",
+              "awayScore": "3",
+              "away": "🦅 AL-HATEM FC"
+            },
+            {
+              "home": "🟢 GREEN KNIGHTS FC",
+              "homeScore": "BYE WEEK",
+              "awayScore": "TBD",
+              "away": "🟢 GREEN KNIGHTS FC"
             }
           ]
         }
