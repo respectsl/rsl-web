@@ -39,24 +39,32 @@ function renderFixtures(data) {
             // Add each Game
             day.games.forEach(game => {
                 let scoreDisplay = "";
+                
+                // Check if BOTH score fields contain ONLY numbers
+                const homeIsNumber = /^\d+$/.test(String(game.homeScore).trim());
+                const awayIsNumber = /^\d+$/.test(String(game.awayScore).trim());
 
-                // Check if it's a BYE week first
+                // 1. Check for BYE week first
                 if (game.homeScore === "BYE" || game.awayScore === "BYE") {
                     scoreDisplay = "BYE WEEK";
                 } 
-                // Otherwise check for TBD
-                else if (game.homeScore === "TBD") {
-                    scoreDisplay = "TBD";
-                } 
-                // Otherwise show the actual score
-                else {
+                // 2. If BOTH are numbers, display the final score (e.g., "2 - 1")
+                else if (homeIsNumber && awayIsNumber) {
                     scoreDisplay = `${game.homeScore} - ${game.awayScore}`;
+                }
+                // 3. If they aren't numbers, but Home Score has custom text (like "8:00 PM"), show it!
+                else if (game.homeScore !== "TBD" && game.homeScore !== "") {
+                    scoreDisplay = game.homeScore;
+                }
+                // 4. Fallback: if everything is just TBD or empty
+                else {
+                    scoreDisplay = "TBD";
                 }
                 
                 html += `
                 <tr class="game-row">
                     <td>${game.home}</td>
-                    <td class="score">${scoreDisplay}</td>
+                    <td class="score" style="text-align:center;">${scoreDisplay}</td>
                     <td>${game.away}</td>
                 </tr>`;
             });

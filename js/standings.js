@@ -6,18 +6,19 @@ fetch('/data/fixtures.json')
   data.weeks.forEach(week => {
     week.days.forEach(day => {
       day.games.forEach(game => {
-        // Skip if TBD OR if it's a BYE week
-        if (
-          game.homeScore === "TBD" || 
-          game.awayScore === "TBD" || 
-          game.homeScore === "BYE" || 
-          game.awayScore === "BYE"
-        ) {
+        // 1. Check if BOTH score fields contain ONLY numbers
+        // This regex (/^\d+$/) means "only digits 0-9". 
+        // It will reject "TBD", "BYE", "8:00 PM", "18:30", etc.
+        const homeIsNumber = /^\d+$/.test(String(game.homeScore).trim());
+        const awayIsNumber = /^\d+$/.test(String(game.awayScore).trim());
+
+        // 2. If either field is not a pure number, skip calculating standings for this game
+        if (!homeIsNumber || !awayIsNumber) {
           return; 
         }
 
-        const hScore = parseInt(game.homeScore);
-        const aScore = parseInt(game.awayScore);
+        const hScore = parseInt(game.homeScore, 10);
+        const aScore = parseInt(game.awayScore, 10);
 
         // Initialize teams in the object if they don't exist
         [game.home, game.away].forEach(team => {
