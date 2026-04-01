@@ -59,9 +59,15 @@
             },
             {
               "home": "🐊 ATLANTIC FC",
-              "homeScore": "16",
+              "homeScore": "17",
               "awayScore": "1",
               "away": "🐅 TIGERS FC"
+            },
+            {
+              "home": "💫 JEI FC",
+              "homeScore": "1",
+              "awayScore": "0",
+              "away": "🦅 AL-HATEM FC"
             }
           ]
         }
