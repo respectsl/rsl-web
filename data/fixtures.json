@@ -7,16 +7,16 @@
           "dateHeader": "TBD",
           "games": [
             {
-              "home": "🐊 ATLANTIC FC",
-              "homeScore": "8:30 PM",
+              "home": "☪️ TEAM BABO FC",
+              "homeScore": "TBD",
               "awayScore": "TBD",
-              "away": "💫 JEI FC"
+              "away": "⚽️ MEDINA FC"
             },
             {
-              "home": "🐊 ATLANTIC FC",
-              "homeScore": "2",
-              "awayScore": "1",
-              "away": "💫 JEI FC"
+              "home": "🐅 TIGERS FC",
+              "homeScore": "TBD",
+              "awayScore": "TBD",
+              "away": "🐊 ATLANTIC FC"
             }
           ]
         },
@@ -24,50 +24,22 @@
           "dateHeader": "TBD",
           "games": [
             {
-              "home": "💫 JEI FC",
-              "homeScore": "10",
-              "awayScore": "5",
-              "away": "🐊 ATLANTIC FC"
-            },
-            {
-              "home": "💫 JEI FC",
-              "homeScore": "15",
-              "awayScore": "5",
-              "away": "🐊 ATLANTIC FC"
-            },
-            {
-              "home": "🐅 TIGERS FC",
-              "homeScore": "BYE",
-              "awayScore": "BYE",
-              "away": "🐅 TIGERS FC"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "week": "Week 2",
-      "days": [
-        {
-          "dateHeader": "Monday",
-          "games": [
-            {
-              "home": "🐊 ATLANTIC FC",
-              "homeScore": "14",
-              "awayScore": "1",
+              "home": "🐬 BLUE DOLPHINS FC",
+              "homeScore": "TBD",
+              "awayScore": "TBD",
               "away": "👵 BIBI FC"
             },
             {
-              "home": "🐊 ATLANTIC FC",
-              "homeScore": "17",
-              "awayScore": "1",
-              "away": "🐅 TIGERS FC"
+              "home": "💫 JEI FC",
+              "homeScore": "TBD",
+              "awayScore": "TBD",
+              "away": "🦅 AL-HATEM FC"
             },
             {
-              "home": "💫 JEI FC",
-              "homeScore": "1",
-              "awayScore": "0",
-              "away": "🦅 AL-HATEM FC"
+              "home": "🟢 GREEN KNIGHTS FC",
+              "homeScore": "BYE",
+              "awayScore": "BYE",
+              "away": "🟢 GREEN KNIGHTS FC"
             }
           ]
         }
