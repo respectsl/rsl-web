@@ -44,6 +44,22 @@
           ]
         }
       ]
+    },
+    {
+      "week": "Week 2",
+      "days": [
+        {
+          "dateHeader": "Monday",
+          "games": [
+            {
+              "home": "🐊 ATLANTIC FC",
+              "homeScore": "14",
+              "awayScore": "1",
+              "away": "👵 BIBI FC"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
