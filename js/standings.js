@@ -74,36 +74,38 @@ function renderStandings(standings) {
     <table class="fixtures-table standings-table">
         <thead>
             <tr class="week-title-row">
-                <th colspan="9">LEAGUE STANDINGS - 2026</th> </tr>
+                <th colspan="10">LEAGUE STANDINGS - 2026</th> 
+            </tr>
             <tr>
-                <th class="col-team">Team</th>
+                <th class="col-stat">#</th> <th class="col-team">Team</th>
                 <th class="col-stat">P</th>
                 <th class="col-stat">W</th>
                 <th class="col-stat">D</th>
                 <th class="col-stat">L</th>
                 <th class="col-stat">GF</th>
                 <th class="col-stat">GA</th>
-                <th class="col-stat">GD</th> <th class="col-stat">PTS</th>
+                <th class="col-stat">GD</th>
+                <th class="col-stat">PTS</th>
             </tr>
         </thead>
         <tbody>`;
 
-  standings.forEach(row => {
+  standings.forEach((row, i) => {
     const gd = row.gf - row.ga;
-    // Adds a "+" in front of positive numbers for a professional look
     const displayGD = gd > 0 ? `+${gd}` : gd;
 
     html += `
       <tr class="game-row">
+          <td class="col-stat" style="font-weight:bold; color:#7f8c8d;">${i + 1}</td>
           <td class="team-cell">${row.team}</td>
-          <td>${row.played}</td>
-          <td>${row.win}</td>
-          <td>${row.draw}</td>
-          <td>${row.loss}</td>
-          <td>${row.gf}</td>
-          <td>${row.ga}</td>
-          <td style="font-weight:bold;">${displayGD}</td>
-          <td style="font-weight:bold; color:#2c3e50;">${row.pts}</td>
+          <td class="col-stat">${row.played}</td>
+          <td class="col-stat">${row.win}</td>
+          <td class="col-stat">${row.draw}</td>
+          <td class="col-stat">${row.loss}</td>
+          <td class="col-stat">${row.gf}</td>
+          <td class="col-stat">${row.ga}</td>
+          <td class="col-stat" style="font-weight:bold;">${displayGD}</td>
+          <td class="col-stat" style="font-weight:bold; color:#2c3e50;">${row.pts}</td>
       </tr>`;
   });
 
