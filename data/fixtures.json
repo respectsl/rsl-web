@@ -4,42 +4,47 @@
       "week": "Week 1",
       "days": [
         {
-          "dateHeader": "TBD",
+          "dateHeader": "Tuesday - 04/07/2026",
           "games": [
             {
-              "home": "☪️ TEAM BABO FC",
-              "homeScore": "TBD",
+              "home": "🐅 TIGERS FC",
+              "homeScore": "8:30 PM",
               "awayScore": "TBD",
-              "away": "⚽️ MEDINA FC"
+              "away": "☪️ TEAM BABO FC"
             },
             {
-              "home": "🐅 TIGERS FC",
-              "homeScore": "TBD",
+              "home": "🟢 GREEN KNIGHTS FC",
+              "homeScore": "9:30 PM",
               "awayScore": "TBD",
-              "away": "🐊 ATLANTIC FC"
+              "away": "🦅 AL-HATEM FC"
             }
           ]
         },
         {
-          "dateHeader": "TBD",
+          "dateHeader": "Wednesday - 04/08/2026",
+          "games": [
+            {
+              "home": "💫 JEI FC",
+              "homeScore": "10:00 PM",
+              "awayScore": "TBD",
+              "away": "👵 BIBI FC"
+            }
+          ]
+        },
+        {
+          "dateHeader": "Thursday - 04/09/2026",
           "games": [
             {
               "home": "🐬 BLUE DOLPHINS FC",
               "homeScore": "TBD",
               "awayScore": "TBD",
-              "away": "👵 BIBI FC"
+              "away": "🐊 ATLANTIC FC"
             },
             {
-              "home": "💫 JEI FC",
-              "homeScore": "TBD",
-              "awayScore": "TBD",
-              "away": "🦅 AL-HATEM FC"
-            },
-            {
-              "home": "🟢 GREEN KNIGHTS FC",
+              "home": "⚽️ MEDINA FC",
               "homeScore": "BYE",
-              "awayScore": "BYE",
-              "away": "🟢 GREEN KNIGHTS FC"
+              "awayScore": "TBD",
+              "away": "⚽️ MEDINA FC"
             }
           ]
         }
