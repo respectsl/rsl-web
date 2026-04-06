@@ -24,10 +24,10 @@
           "dateHeader": "Wednesday - 04/08/2026",
           "games": [
             {
-              "home": "💫 JEI FC",
+              "home": "👵 BIBI FC",
               "homeScore": "10:00 PM",
               "awayScore": "TBD",
-              "away": "👵 BIBI FC"
+              "away": "💫 JEI FC"
             }
           ]
         },
@@ -95,10 +95,10 @@
           "dateHeader": "Tuesday - 04/21/2026",
           "games": [
             {
-              "home": "☪️ TEAM BABO FC",
+              "home": "🐊 ATLANTIC FC",
               "homeScore": "8:30 PM",
               "awayScore": "TBD",
-              "away": "🐊 ATLANTIC FC"
+              "away": "☪️ TEAM BABO FC"
             },
             {
               "home": "🟢 GREEN KNIGHTS FC",
@@ -156,10 +156,10 @@
           "dateHeader": "Wednesday - 04/29/2026",
           "games": [
             {
-              "home": "🐊 ATLANTIC FC",
+              "home": "💫 JEI FC",
               "homeScore": "10:00 PM",
               "awayScore": "TBD",
-              "away": "💫 JEI FC"
+              "away": "🐊 ATLANTIC FC"
             }
           ]
         },
@@ -180,7 +180,7 @@
       "week": "Week 5",
       "days": [
         {
-          "dateHeader": "TBD",
+          "dateHeader": "Tuesday - 05/05/2026",
           "games": [
             {
               "home": "🐊 ATLANTIC FC",
@@ -224,7 +224,7 @@
       "week": "Week 6",
       "days": [
         {
-          "dateHeader": "TBD",
+          "dateHeader": "Tuesday - 05/12/2026",
           "games": [
             {
               "home": "🐅 TIGERS FC",
@@ -268,7 +268,7 @@
       "week": "Week 7",
       "days": [
         {
-          "dateHeader": "TBD",
+          "dateHeader": "Tuesday - 05/19/2026",
           "games": [
             {
               "home": "🐅 TIGERS FC",
@@ -288,10 +288,10 @@
           "dateHeader": "TBD",
           "games": [
             {
-              "home": "🐬 BLUE DOLPHINS FC",
+              "home": "💫 JEI FC",
               "homeScore": "TBD",
               "awayScore": "TBD",
-              "away": "💫 JEI FC"
+              "away": "🐬 BLUE DOLPHINS FC"
             }
           ]
         },
