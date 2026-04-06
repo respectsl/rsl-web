@@ -43,6 +43,50 @@
           ]
         }
       ]
+    },
+    {
+      "week": "Week 2",
+      "days": [
+        {
+          "dateHeader": "Tuesday - 04/14/2026",
+          "games": [
+            {
+              "home": "🐊 ATLANTIC FC",
+              "homeScore": "TBD",
+              "awayScore": "TBD",
+              "away": "👵 BIBI FC"
+            },
+            {
+              "home": "🐅 TIGERS FC",
+              "homeScore": "9:00 PM",
+              "awayScore": "TBD",
+              "away": "🟢 GREEN KNIGHTS FC"
+            }
+          ]
+        },
+        {
+          "dateHeader": "Wednesday - 04/15/2026",
+          "games": [
+            {
+              "home": "☪️ TEAM BABO FC",
+              "homeScore": "10:00 PM",
+              "awayScore": "TBD",
+              "away": "💫 JEI FC"
+            }
+          ]
+        },
+        {
+          "dateHeader": "Thursday - 04/16/2026",
+          "games": [
+            {
+              "home": "🦅 AL-HATEM FC",
+              "homeScore": "10:00 PM",
+              "awayScore": "TBD",
+              "away": "🐬 BLUE DOLPHINS FC"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
