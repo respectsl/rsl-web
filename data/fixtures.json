@@ -49,6 +49,408 @@
           ]
         }
       ]
+    },
+    {
+      "week": "Week 2",
+      "days": [
+        {
+          "dateHeader": "Tuesday - 04/14/2026",
+          "games": [
+            {
+              "home": "👵 BIBI FC",
+              "homeScore": "8:30 PM",
+              "awayScore": "TBD",
+              "away": "🐬 BLUE DOLPHINS FC"
+            },
+            {
+              "home": "🇪🇬 EGYPT FC",
+              "homeScore": "9:30 PM",
+              "awayScore": "TBD",
+              "away": "🟢 GREEN KNIGHTS FC"
+            }
+          ]
+        },
+        {
+          "dateHeader": "Wednesday - 04/15/2026",
+          "games": [
+            {
+              "home": "💫 JEI FC",
+              "homeScore": "10:00 PM",
+              "awayScore": "TBD",
+              "away": "🐅 TIGERS FC"
+            }
+          ]
+        },
+        {
+          "dateHeader": "Thursday - 04/16/2026",
+          "games": [
+            {
+              "home": "☪️ TEAM BABO FC",
+              "homeScore": "10:00 PM",
+              "awayScore": "TBD",
+              "away": "🦅 AL-HATEM FC"
+            },
+            {
+              "home": "🐊 ATLANTIC FC",
+              "homeScore": "BYE",
+              "awayScore": "TBD",
+              "away": "🐊 ATLANTIC FC"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": "Week 3",
+      "days": [
+        {
+          "dateHeader": "Tuesday - 04/21/2026",
+          "games": [
+            {
+              "home": "🦅 AL-HATEM FC",
+              "homeScore": "8:30 PM",
+              "awayScore": "TBD",
+              "away": "🇪🇬 EGYPT FC"
+            },
+            {
+              "home": "🟢 GREEN KNIGHTS FC",
+              "homeScore": "9:30 PM",
+              "awayScore": "TBD",
+              "away": "🐅 TIGERS FC"
+            }
+          ]
+        },
+        {
+          "dateHeader": "Wednesday - 04/22/2026",
+          "games": [
+            {
+              "home": "🐊 ATLANTIC FC",
+              "homeScore": "10:00 PM",
+              "awayScore": "TBD",
+              "away": "💫 JEI FC"
+            }
+          ]
+        },
+        {
+          "dateHeader": "Thursday - 04/23/2026",
+          "games": [
+            {
+              "home": "👵 BIBI FC",
+              "homeScore": "10:00 PM",
+              "awayScore": "TBD",
+              "away": "☪️ TEAM BABO FC"
+            },
+            {
+              "home": "🐬 BLUE DOLPHINS FC",
+              "homeScore": "BYE",
+              "awayScore": "TBD",
+              "away": "🐬 BLUE DOLPHINS FC"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": "Week 4",
+      "days": [
+        {
+          "dateHeader": "Tuesday - 04/28/2026",
+          "games": [
+            {
+              "home": "🦅 AL-HATEM FC",
+              "homeScore": "8:30 PM",
+              "awayScore": "TBD",
+              "away": "🐊 ATLANTIC FC"
+            },
+            {
+              "home": "👵 BIBI FC",
+              "homeScore": "9:30 PM",
+              "awayScore": "TBD",
+              "away": "🟢 GREEN KNIGHTS FC"
+            }
+          ]
+        },
+        {
+          "dateHeader": "Wednesday - 04/29/2026",
+          "games": [
+            {
+              "home": "🐅 TIGERS FC",
+              "homeScore": "10:00 PM",
+              "awayScore": "TBD",
+              "away": "🐬 BLUE DOLPHINS FC"
+            }
+          ]
+        },
+        {
+          "dateHeader": "Thursday - 04/30/2026",
+          "games": [
+            {
+              "home": "☪️ TEAM BABO FC",
+              "homeScore": "10:00 PM",
+              "awayScore": "TBD",
+              "away": "🇪🇬 EGYPT FC"
+            },
+            {
+              "home": "💫 JEI FC",
+              "homeScore": "BYE",
+              "awayScore": "TBD",
+              "away": "💫 JEI FC"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": "Week 5",
+      "announcement": "<section class=\"teams\">Starting May 2026: Wednesday/Thursday kickoff times and dates are subject to change. Important: While the time might shift, your opponent will remain the same.</section>",
+      "days": [
+        {
+          "dateHeader": "Tuesday - 05/05/2026",
+          "games": [
+            {
+              "home": "🐅 TIGERS FC",
+              "homeScore": "8:30 PM",
+              "awayScore": "TBD",
+              "away": "🐊 ATLANTIC FC"
+            },
+            {
+              "home": "👵 BIBI FC",
+              "homeScore": "9:30 PM",
+              "awayScore": "TBD",
+              "away": "🇪🇬 EGYPT FC"
+            }
+          ]
+        },
+        {
+          "dateHeader": "Wednesday - 05/06/2026",
+          "games": [
+            {
+              "home": "💫 JEI FC",
+              "homeScore": "10:00 PM",
+              "awayScore": "TBD",
+              "away": "🦅 AL-HATEM FC"
+            }
+          ]
+        },
+        {
+          "dateHeader": "Thursday - 05/07/2026",
+          "games": [
+            {
+              "home": "🐬 BLUE DOLPHINS FC",
+              "homeScore": "10:00 PM",
+              "awayScore": "TBD",
+              "away": "☪️ TEAM BABO FC"
+            },
+            {
+              "home": "🟢 GREEN KNIGHTS FC",
+              "homeScore": "BYE",
+              "awayScore": "TBD",
+              "away": "🟢 GREEN KNIGHTS FC"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": "Week 6",
+      "days": [
+        {
+          "dateHeader": "Tuesday - 05/12/2026",
+          "games": [
+            {
+              "home": "🦅 AL-HATEM FC",
+              "homeScore": "8:30 PM",
+              "awayScore": "TBD",
+              "away": "🐬 BLUE DOLPHINS FC"
+            },
+            {
+              "home": "🟢 GREEN KNIGHTS FC",
+              "homeScore": "9:30 PM",
+              "awayScore": "TBD",
+              "away": "🐊 ATLANTIC FC"
+            }
+          ]
+        },
+        {
+          "dateHeader": "Wednesday - 05/13/2026",
+          "games": [
+            {
+              "home": "🇪🇬 EGYPT FC",
+              "homeScore": "10:00 PM",
+              "awayScore": "TBD",
+              "away": "💫 JEI FC"
+            }
+          ]
+        },
+        {
+          "dateHeader": "Thursday - 05/14/2026",
+          "games": [
+            {
+              "home": "🐅 TIGERS FC",
+              "homeScore": "10:00 PM",
+              "awayScore": "TBD",
+              "away": "👵 BIBI FC"
+            },
+            {
+              "home": "☪️ TEAM BABO FC",
+              "homeScore": "BYE",
+              "awayScore": "TBD",
+              "away": "☪️ TEAM BABO FC"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": "Week 7",
+      "days": [
+        {
+          "dateHeader": "Tuesday - 05/19/2026",
+          "games": [
+            {
+              "home": "🇪🇬 EGYPT FC",
+              "homeScore": "8:30 PM",
+              "awayScore": "TBD",
+              "away": "🐬 BLUE DOLPHINS FC"
+            },
+            {
+              "home": "🦅 AL-HATEM FC",
+              "homeScore": "9:30 PM",
+              "awayScore": "TBD",
+              "away": "👵 BIBI FC"
+            }
+          ]
+        },
+        {
+          "dateHeader": "Wednesday - 05/20/2026",
+          "games": [
+            {
+              "home": "💫 JEI FC",
+              "homeScore": "10:00 PM",
+              "awayScore": "TBD",
+              "away": "🟢 GREEN KNIGHTS FC"
+            }
+          ]
+        },
+        {
+          "dateHeader": "Thursday - 05/21/2026",
+          "games": [
+            {
+              "home": "☪️ TEAM BABO FC",
+              "homeScore": "10:00 PM",
+              "awayScore": "TBD",
+              "away": "🐊 ATLANTIC FC"
+            },
+            {
+              "home": "🐅 TIGERS FC",
+              "homeScore": "BYE",
+              "awayScore": "TBD",
+              "away": "🐅 TIGERS FC"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": "Week 8",
+      "announcement": "<section class=\"teams\">No games will be played from May 25 to May 29 in observance of Eid. ‼️<br><br>Week 8 will resume on June 2nd.</section>",
+      "days": [
+        {
+          "dateHeader": "Tuesday - 06/02/2026",
+          "games": [
+            {
+              "home": "👵 BIBI FC",
+              "homeScore": "8:30 PM",
+              "awayScore": "TBD",
+              "away": "🐊 ATLANTIC FC"
+            },
+            {
+              "home": "🟢 GREEN KNIGHTS FC",
+              "homeScore": "9:30 PM",
+              "awayScore": "TBD",
+              "away": "☪️ TEAM BABO FC"
+            }
+          ]
+        },
+        {
+          "dateHeader": "Wednesday - 06/03/2026",
+          "games": [
+            {
+              "home": "💫 JEI FC",
+              "homeScore": "10:00 PM",
+              "awayScore": "TBD",
+              "away": "🐬 BLUE DOLPHINS FC"
+            }
+          ]
+        },
+        {
+          "dateHeader": "Thursday - 06/04/2026",
+          "games": [
+            {
+              "home": "🐅 TIGERS FC",
+              "homeScore": "10:00 PM",
+              "awayScore": "TBD",
+              "away": "🇪🇬 EGYPT FC"
+            },
+            {
+              "home": "🦅 AL-HATEM FC",
+              "homeScore": "BYE",
+              "awayScore": "TBD",
+              "away": "🦅 AL-HATEM FC"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": "Week 9",
+      "days": [
+        {
+          "dateHeader": "Tuesday - 06/09/2026",
+          "games": [
+            {
+              "home": "🐊 ATLANTIC FC",
+              "homeScore": "8:30 PM",
+              "awayScore": "TBD",
+              "away": "🇪🇬 EGYPT FC"
+            },
+            {
+              "home": "🐬 BLUE DOLPHINS FC",
+              "homeScore": "9:30 PM",
+              "awayScore": "TBD",
+              "away": "🟢 GREEN KNIGHTS FC"
+            }
+          ]
+        },
+        {
+          "dateHeader": "Wednesday - 06/10/2026",
+          "games": [
+            {
+              "home": "☪️ TEAM BABO FC",
+              "homeScore": "10:00 PM",
+              "awayScore": "TBD",
+              "away": "💫 JEI FC"
+            }
+          ]
+        },
+        {
+          "dateHeader": "Thursday - 06/11/2026",
+          "games": [
+            {
+              "home": "🐅 TIGERS FC",
+              "homeScore": "10:00 PM",
+              "awayScore": "TBD",
+              "away": "🦅 AL-HATEM FC"
+            },
+            {
+              "home": "👵 BIBI FC",
+              "homeScore": "BYE",
+              "awayScore": "TBD",
+              "away": "👵 BIBI FC"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

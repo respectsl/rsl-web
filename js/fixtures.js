@@ -14,6 +14,13 @@ function renderFixtures(data) {
         // Start a new container to create the 60px gap from your CSS
         html += `<div class="week-container">`;
 
+        if (week.announcement) {
+            html += `
+            <section class="teams">
+                ${week.announcement}
+            </section>`;
+        }
+
         // Start a NEW independent table for this specific week
         html += `
         <table class="fixtures-table">
