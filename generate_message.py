@@ -17,18 +17,18 @@ if not account_sid or not auth_token:
     exit()
 
 TEAM_JERSEYS = {
-    "GREEN KNIGHTS FC": "Green",
-    "TIGERS FC": "Red"
+    "GREEN KNIGHTS FC": "*Green*",
+    "TIGERS FC": "*Red*"
 }
 
 def clean_team_name(name):
     return re.sub(r'[^\w\s]', '', name).strip()
 
 def get_colors(home, away):
-    if home == "GREEN KNIGHTS FC": return "Green", "Black"
-    if away == "GREEN KNIGHTS FC": return "Black", "Green"
-    if home == "TIGERS FC": return "Red", "White"
-    if away == "TIGERS FC": return "White", "Red"
+    if home == "GREEN KNIGHTS FC": return "*Green*", "*Black*"
+    if away == "GREEN KNIGHTS FC": return "*Black*", "*Green*"
+    if home == "TIGERS FC": return "*Red*", "*White*"
+    if away == "TIGERS FC": return "*White*", "*Red*"
     return "Black", "White"
 
 # ---- LOAD DATA ----
@@ -51,7 +51,7 @@ if not today_games:
     exit()
 
 # ---- BUILD MESSAGE ----
-message = "⚽ *RSL Match Day Reminder*\n\n"
+message = "⚽ *RSL Match Day Reminder & Jersey Color*\n\n"
 for i, (home_raw, away_raw, time) in enumerate(today_games, 1):
     home_clean, away_clean = clean_team_name(home_raw), clean_team_name(away_raw)
     home_col, away_col = get_colors(home_clean, away_clean)
