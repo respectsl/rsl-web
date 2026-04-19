@@ -74,6 +74,7 @@ for i, (home_raw, away_raw, time) in enumerate(today_games, 1):
 
     message += f"{i}️⃣ *{home_raw}* vs *{away_raw}*\n"
     message += f"⏰ {time}\n"
+    message += f"*JERSEYS FOR TODAY:*\n"
     message += f"👕 {home_raw}: {home_col}\n"
     message += f"👕 {away_raw}: {away_col}\n\n"
 
