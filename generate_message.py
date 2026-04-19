@@ -24,12 +24,28 @@ TEAM_JERSEYS = {
 def clean_team_name(name):
     return re.sub(r'[^\w\s]', '', name).strip()
 
-def get_colors(home, away):
-    if home == "GREEN KNIGHTS FC": return "*Green*", "*Black*"
-    if away == "GREEN KNIGHTS FC": return "*Black*", "*Green*"
-    if home == "TIGERS FC": return "*Red*", "*White*"
-    if away == "TIGERS FC": return "*White*", "*Red*"
-    return "Black", "White"
+def get_colors(home_raw, away_raw):
+    # 1. Clean the names so emojis/symbols don't break the match
+    home = clean_team_name(home_raw).upper()
+    away = clean_team_name(away_raw).upper()
+
+    # 2. Determine Home Color
+    if home == "TIGERS FC":
+        home_col = "*Red*"
+    elif home == "GREEN KNIGHTS FC":
+        home_col = "*Green*"
+    else:
+        home_col = "*Black*"  # Default for any other home team
+
+    # 3. Determine Away Color
+    if away == "TIGERS FC":
+        away_col = "*Red*"
+    elif away == "GREEN KNIGHTS FC":
+        away_col = "*Green*"
+    else:
+        away_col = "*White*"  # Default for any other away team
+
+    return home_col, away_col
 
 # ---- LOAD DATA ----
 with open("./data/fixtures.json") as f:
