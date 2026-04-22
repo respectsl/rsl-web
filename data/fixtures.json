@@ -2,6 +2,7 @@
   "weeks": [
     {
       "week": "Week 1",
+      "announcement": "",
       "days": [
         {
           "dateHeader": "Tuesday - 04/07/2026",
@@ -52,6 +53,7 @@
     },
     {
       "week": "Week 2",
+      "announcement": "",
       "days": [
         {
           "dateHeader": "Tuesday - 04/14/2026",
@@ -102,14 +104,15 @@
     },
     {
       "week": "Week 3",
+      "announcement": "",
       "days": [
         {
           "dateHeader": "Tuesday - 04/21/2026",
           "games": [
             {
               "home": "🦅 AL-HATEM FC",
-              "homeScore": "8:30 PM",
-              "awayScore": "TBD",
+              "homeScore": "0",
+              "awayScore": "10",
               "away": "🇪🇬 EGYPT FC"
             },
             {
@@ -152,6 +155,7 @@
     },
     {
       "week": "Week 4",
+      "announcement": "",
       "days": [
         {
           "dateHeader": "Tuesday - 04/28/2026",
@@ -202,6 +206,7 @@
     },
     {
       "week": "Week 5",
+      "announcement": "Starting May 2026: Wednesday/Thursday kickoff times and dates are subject to change. Important: While the time might shift, your opponent will remain the same.",
       "days": [
         {
           "dateHeader": "Tuesday - 05/05/2026",
@@ -248,11 +253,11 @@
             }
           ]
         }
-      ],
-      "announcement": "Starting May 2026: Wednesday/Thursday kickoff times and dates are subject to change. Important: While the time might shift, your opponent will remain the same."
+      ]
     },
     {
       "week": "Week 6",
+      "announcement": "",
       "days": [
         {
           "dateHeader": "Tuesday - 05/12/2026",
@@ -303,6 +308,7 @@
     },
     {
       "week": "Week 7",
+      "announcement": "",
       "days": [
         {
           "dateHeader": "Tuesday - 05/19/2026",
@@ -353,6 +359,7 @@
     },
     {
       "week": "Week 8",
+      "announcement": "No games will be played from May 25 to May 29 in observance of Eid. ‼️<br><br>Week 8 will resume on June 2nd.",
       "days": [
         {
           "dateHeader": "Tuesday - 06/02/2026",
@@ -399,11 +406,11 @@
             }
           ]
         }
-      ],
-      "announcement": "No games will be played from May 25 to May 29 in observance of Eid. ‼️<br><br>Week 8 will resume on June 2nd."
+      ]
     },
     {
       "week": "Week 9",
+      "announcement": "",
       "days": [
         {
           "dateHeader": "Tuesday - 06/09/2026",
@@ -470,7 +477,7 @@
             {
               "label": "",
               "home": "2nd Place",
-              "homeScore": "",
+              "homeScore": "TBD",
               "awayScore": "TBD",
               "away": "3rd Place"
             }
