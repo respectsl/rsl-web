@@ -1,55 +1,67 @@
 import json
 import os
 import re
+import requests
 from datetime import datetime
-from twilio.rest import Client
 
-# ---- TWILIO CONFIG (Must be at the top) ----
-account_sid = os.getenv('TWILIO_ACCOUNT_SID')
-auth_token = os.getenv('TWILIO_AUTH_TOKEN')
-from_whatsapp = os.getenv('TWILIO_FROM_NUMBER') # Should be whatsapp:+14155238886
+# ---- CALLMEBOT CONFIG ----
 numbers_raw = os.getenv('WHATSAPP_NUMBERS', "")
-phone_list = [n.strip() for n in numbers_raw.split(",") if n.strip()]
+keys_raw = os.getenv('CALLMEBOT_API_KEYS', "")
 
-# Now this check will work because the names are defined
-if not account_sid or not auth_token:
-    print("⚠️ Missing Twilio Credentials in GitHub Secrets.")
+phone_list = [n.strip() for n in numbers_raw.split(",") if n.strip()]
+key_list = [k.strip() for k in keys_raw.split(",") if k.strip()]
+
+if not phone_list or not key_list:
+    print("⚠️ Missing Phone Numbers or API Keys in GitHub Secrets.")
     exit()
 
-TEAM_JERSEYS = {
-    "GREEN KNIGHTS FC": "*Green*",
-    "TIGERS FC": "*Red*"
-}
+# Create a mapping of phone numbers to their respective API keys
+user_configs = list(zip(phone_list, key_list))
 
 def clean_team_name(name):
     return re.sub(r'[^\w\s]', '', name).strip()
 
 def get_colors(home_raw, away_raw):
-    # 1. Clean the names so emojis/symbols don't break the match
     home = clean_team_name(home_raw).upper()
     away = clean_team_name(away_raw).upper()
 
-    # 2. Determine Home Color
-    if home == "TIGERS FC":
+    # Set standard defaults for the rest of the league
+    home_col = "*Black*"
+    away_col = "*White*"
+
+    # Special Case: Tigers play Green Knights
+    if home == "TIGERS FC" and away == "GREEN KNIGHTS FC":
         home_col = "*Red*"
+        away_col = "*Green*"
+    elif home == "GREEN KNIGHTS FC" and away == "TIGERS FC":
+        home_col = "*Green*"
+        away_col = "*Red*"
+        
+    # Tigers play any other team
+    elif home == "TIGERS FC":
+        home_col = "*Red*"
+        away_col = "*White*"  # Opponent wears white
+    elif away == "TIGERS FC":
+        away_col = "*Red*"
+        home_col = "*White*"  # Opponent wears white
+        
+    # Green Knights play any other team
     elif home == "GREEN KNIGHTS FC":
         home_col = "*Green*"
-    else:
-        home_col = "*Black*"  # Default for any other home team
-
-    # 3. Determine Away Color
-    if away == "TIGERS FC":
-        away_col = "*Red*"
+        away_col = "*Black*"  # Opponent wears black
     elif away == "GREEN KNIGHTS FC":
         away_col = "*Green*"
-    else:
-        away_col = "*White*"  # Default for any other away team
+        home_col = "*Black*"  # Opponent wears black
 
     return home_col, away_col
 
 # ---- LOAD DATA ----
-with open("./data/fixtures.json") as f:
-    data = json.load(f)
+try:
+    with open("./data/fixtures.json") as f:
+        data = json.load(f)
+except FileNotFoundError:
+    print("❌ Error: fixtures.json not found.")
+    exit()
 
 today_str = datetime.now().strftime("%m/%d/%Y")
 today_games = []
@@ -63,54 +75,43 @@ for week in data["weeks"]:
                 today_games.append((game["home"], game["away"], game["homeScore"]))
 
 if not today_games:
-    print("No games today.")
+    print(f"No games found for today ({today_str}).")
     exit()
 
 # ---- BUILD MESSAGE ----
 message = "⚽ *RSL Match Day Reminder & Jersey Color*\n\n"
 for i, (home_raw, away_raw, time) in enumerate(today_games, 1):
     home_clean, away_clean = clean_team_name(home_raw), clean_team_name(away_raw)
-    home_col, away_col = get_colors(home_clean, away_clean)
+    home_col, away_col = get_colors(home_raw, away_raw)
 
     message += f"{i}️⃣ *{home_raw}* vs *{away_raw}*\n"
     message += f"⏰ {time}\n"
-    message += f"*JERSEYS FOR TODAY:*\n"
+    message += f"*JERSEYS:*\n"
     message += f"👕 {home_raw}: {home_col}\n"
     message += f"👕 {away_raw}: {away_col}\n\n"
 
 message += "🚫 *NO GRAY shirts allowed.*\nPlease arrive 15 minutes early."
 
-# ---- SENDING VIA TWILIO ----
-if not account_sid or not auth_token:
-    print("⚠️ Missing Twilio Credentials.")
-    exit()
-
-client = Client(account_sid, auth_token)
-
-# Ensure the FROM number has the correct prefix
-if not from_whatsapp.startswith("whatsapp:"):
-    # If it doesn't have the prefix, add it. 
-    # Also ensure it has the '+' if it's just the digits.
-    if not from_whatsapp.startswith("+"):
-        from_whatsapp = f"whatsapp:+{from_whatsapp}"
-    else:
-        from_whatsapp = f"whatsapp:{from_whatsapp}"
-
-for phone in phone_list:
+# ---- SENDING VIA CALLMEBOT ----
+for phone, apikey in user_configs:
+    # Completely mask the phone number for the logs
+    masked_phone = "***"
+    
     try:
-        # Clean up the receiver number
-        target_phone = phone.strip()
-        if not target_phone.startswith("whatsapp:"):
-            if not target_phone.startswith("+"):
-                target_phone = f"whatsapp:+{target_phone}"
-            else:
-                target_phone = f"whatsapp:{target_phone}"
+        # CallMeBot API Endpoint
+        url = "https://api.callmebot.com/whatsapp.php"
+        params = {
+            "phone": phone,
+            "text": message,
+            "apikey": apikey
+        }
         
-        client.messages.create(
-            body=message,
-            from_=from_whatsapp,
-            to=target_phone
-        )
-        print(f"✅ Sent to {target_phone}")
+        response = requests.get(url, params=params)
+        
+        if response.status_code == 200:
+            print(f"✅ Sent successfully to {masked_phone}")
+        else:
+            print(f"❌ Failed for {masked_phone}: Status {response.status_code} - {response.text}")
+            
     except Exception as e:
-        print(f"❌ Failed for {phone}: {e}")
+        print(f"❌ Connection error for {masked_phone}: {e}")

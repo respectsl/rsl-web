@@ -2,8 +2,8 @@ name: Match Day Reminder
 
 on:
   schedule:
-    # Runs at 14:00 UTC (10:00 AM EST time) on Tuesday, Wednesday, and Thursday
-    - cron: '0 14 * * 2,3,4'
+    # Runs at 14:00 UTC (10:10 AM EST time) on Tuesday, Wednesday, and Thursday
+    - cron: '10 14 * * 2,3,4'
   workflow_dispatch:
 
 jobs:
@@ -20,13 +20,11 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install requests twilio
+          pip install requests
 
       - name: Run Script
         env:
-          # Use your new Twilio Secrets
-          TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
-          TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
-          TWILIO_FROM_NUMBER: ${{ secrets.TWILIO_FROM_NUMBER }}
+          # New CallMeBot Secrets
           WHATSAPP_NUMBERS: ${{ secrets.WHATSAPP_NUMBERS }}
+          CALLMEBOT_API_KEYS: ${{ secrets.CALLMEBOT_API_KEYS }}
         run: python generate_message.py
