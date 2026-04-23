@@ -90,7 +90,7 @@ for i, (home_raw, away_raw, time) in enumerate(today_games, 1):
     message += f"👕 {home_raw}: {home_col}\n"
     message += f"👕 {away_raw}: {away_col}\n\n"
 
-message += "🚫 *NO GRAY shirts allowed.*\nPlease arrive 15 minutes early."
+message += "🚫 *NO GRAY shirts allowed.*\nPlease arrive 15 minutes early.\n📍*Game location:* 3323 Seventh St, Whitehall, PA 18052\n*Front Field*"
 
 # ---- SENDING VIA CALLMEBOT ----
 for phone, apikey in user_configs:
