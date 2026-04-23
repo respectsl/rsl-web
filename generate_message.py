@@ -80,7 +80,6 @@ if not today_games:
 
 # ---- BUILD MESSAGE ----
 message = "⚽ *RSL Match Day Reminder & Jersey Color*\n\n"
-message += "━━━━━━━━━━━━━━━━━━━━\n\n"
 for i, (home_raw, away_raw, time) in enumerate(today_games, 1):
     home_clean, away_clean = clean_team_name(home_raw), clean_team_name(away_raw)
     home_col, away_col = get_colors(home_raw, away_raw)
