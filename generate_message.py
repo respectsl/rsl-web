@@ -92,7 +92,7 @@ for i, (home_raw, away_raw, time) in enumerate(today_games, 1):
 
 message += "⚠️ *IMPORTANT RULES*\n"
 message += "• 🚫 *NO GRAY* shirts allowed\n"
-message += "• ⏱️ Arrive *15 minutes* early\n\n"
+message += "• ⏱️ Arrive *10 minutes* early\n\n"
 
 message += "📍 *GAME LOCATION*\n"
 message += "3323 Seventh St, Whitehall, PA 18052\n"

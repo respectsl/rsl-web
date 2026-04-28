@@ -330,50 +330,64 @@ th {
   font-size: 0.95rem;
 }
 
-/* ── STANDINGS TABLE ─────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════
+   STANDINGS TABLE — fully isolated, does not affect other tables
+   ═══════════════════════════════════════════════════════════ */
 
-/* Wrapper: scroll horizontally on small screens */
-.standings-wrapper {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  border-radius: var(--radius);
-}
-
+/* Base table */
 .standings-table {
-  table-layout: auto;   /* let content drive column widths */
-  width: 100%;
-  min-width: 520px;     /* never squish below this — scroll instead */
-  font-size: 0.9em;
-  border-collapse: collapse;
+  table-layout: auto !important; /* Let the browser fit columns to their content naturally */
+  width: 100% !important;
+  border-collapse: collapse !important;
+  font-size: 0.84em;
 }
 
-/* Rank # */
-.standings-table th:nth-child(1),
-.standings-table td:nth-child(1) {
+/* Reset any widths inherited from the fixtures table */
+.standings-table th,
+.standings-table td {
+  width: auto !important;
+}
+
+/* ── Column 1: # rank ── */
+.standings-table th.col-stat:first-child,
+.standings-table td.col-stat:first-child {
   text-align: center !important;
-  padding: 10px 8px;
+  padding: 8px 4px !important;
   font-weight: bold;
   color: #7f8c8d;
   white-space: nowrap;
 }
 
-/* Team name — as wide as it needs to be */
-.col-team, .team-cell,
-.standings-table th:nth-child(2),
-.standings-table td:nth-child(2) {
+/* ── Column 2: Team name ── */
+.standings-table th.col-team,
+.standings-table td.team-cell {
   text-align: left !important;
-  padding: 10px 12px !important;
+  padding-left: 8px !important;
   font-weight: bold;
+  white-space: nowrap; /* Keeps the name on one line without the ... */
+}
+
+/* ── Columns 3–10: stat columns (P W D L GF GA GD PTS) ── */
+.standings-table th.col-stat:not(:first-child),
+.standings-table td.col-stat:not(:first-child) {
+  text-align: center !important;
+  padding: 8px 4px !important;
   white-space: nowrap;
 }
 
-/* All 8 stat columns — compact, equal, no wrapping */
-.col-stat,
-.standings-table th:nth-child(n+3),
-.standings-table td:nth-child(n+3) {
-  text-align: center;
-  white-space: nowrap;
-  padding: 10px 8px;
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .standings-table {
+    font-size: 0.75em; /* Slightly smaller font to ensure all columns fit on narrow screens */
+  }
+  .standings-table th,
+  .standings-table td {
+    padding: 6px 3px !important;
+  }
+  .standings-table th.col-team,
+  .standings-table td.team-cell {
+    padding-left: 6px !important;
+  }
 }
 
 /* ── STATUS CLASSES (fixtures page) ─────────────────────── */
@@ -665,15 +679,7 @@ footer a.disclaimer:hover {
 
   .bracket-grid { grid-template-columns: 1fr; }
 
-  /* Standings on mobile — scroll horizontally, never squish */
-  .standings-wrapper {
-    overflow-x: auto !important;
-    -webkit-overflow-scrolling: touch !important;
-  }
-  .standings-table {
-    font-size: 0.85em;
-    min-width: 520px !important;
-  }
+
 
   th, td { padding: 6px 2px; }
 
