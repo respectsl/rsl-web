@@ -431,6 +431,25 @@
               "away": "👵 BIBI FC"
             }
           ]
+        },
+        {
+          "dateHeader": "📅 Tuesday – 06/16/2026<br><span style='font-size:0.9em; font-weight:normal; opacity:0.75;'>Division A Semifinals (Top 4)</span>",
+          "games": [
+            {
+              "label": "",
+              "home": "☪️ TEAM BABO FC",
+              "homeScore": "8:30 PM",
+              "awayScore": "TBD",
+              "away": "🐊 ATLANTIC FC"
+            },
+            {
+              "label": "",
+              "home": "🇪🇬 EGYPT FC",
+              "homeScore": "9:30 PM",
+              "awayScore": "TBD",
+              "away": "🟢 GREEN KNIGHTS FC"
+            }
+          ]
         }
       ]
     }
@@ -440,7 +459,7 @@
       "round": "Playoffs Week 1 - Semifinals",
       "days": [
         {
-          "dateHeader": "Tuesday - 06/16/2026",
+          "dateHeader": "📅 Tuesday – 06/16/2026<br><span style='font-size:0.9em; font-weight:normal; opacity:0.75;'>Division A Semifinals (Top 4)</span>",
           "games": [
             {
               "label": "",
