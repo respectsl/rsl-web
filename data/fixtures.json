@@ -431,6 +431,25 @@
               "away": "👵 BIBI FC"
             }
           ]
+        },
+        {
+          "dateHeader": "📅 Thursday – 06/18/2026<br><span style='font-size:0.8em; font-weight:normal; opacity:0.75;'>Division B Semifinals (5th–8th Place)</span>",
+          "games": [
+            {
+              "label": "",
+              "home": "🦅 AL-HATEM FC",
+              "homeScore": "8:30 PM",
+              "awayScore": "TBD",
+              "away": "🐬 BLUE DOLPHINS FC"
+            },
+            {
+              "label": "",
+              "home": "🐅 TIGERS FC",
+              "homeScore": "9:30 PM",
+              "awayScore": "TBD",
+              "away": "💫 JEI FC"
+            }
+          ]
         }
       ]
     }
