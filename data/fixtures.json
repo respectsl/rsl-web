@@ -486,18 +486,18 @@
           "dateHeader": "📅 Tuesday – 06/23/2026 <br><span style='font-size:0.9em; font-weight:normal; opacity:0.75;'>Division A Finals</span>",
           "games": [
             {
-              "label": "🥉 3rd Place Match",
-              "home": "Div A Semis 1 Loser",
+              "label": "",
+              "home": "TBD",
               "homeScore": "8:30 PM",
               "awayScore": "TBD",
-              "away": "Div A Semis 2 Loser"
+              "away": "TBD"
             },
             {
-              "label": "🏆 CHAMPIONSHIP GAME",
-              "home": "Div A Semis 1 Winner",
+              "label": "",
+              "home": "TBD",
               "homeScore": "9:30 PM",
               "awayScore": "TBD",
-              "away": "Div A Semis 2 Winner"
+              "away": "TBD"
             }
           ],
           "playoffDate": "TBD"
@@ -506,18 +506,18 @@
           "dateHeader": "📅 Thursday – 06/25/2026 <br><span style='font-size:0.9em; font-weight:normal; opacity:0.75;'>Division B Finals</span>",
           "games": [
             {
-              "label": "🥉 Div B 3rd Place",
-              "home": "Div B Semis 1 Loser",
+              "label": "",
+              "home": "TBD",
               "homeScore": "8:30 PM",
               "awayScore": "TBD",
-              "away": "Div B Semis 2 Loser"
+              "away": "TBD"
             },
             {
-              "label": "🥇 Div B Championship",
-              "home": "Div B Semis 1 Winner",
+              "label": "",
+              "home": "TBD",
               "homeScore": "9:30 PM",
               "awayScore": "TBD",
-              "away": "Div B Semis 2 Winner"
+              "away": "TBD"
             }
           ],
           "playoffDate": "TBD"
