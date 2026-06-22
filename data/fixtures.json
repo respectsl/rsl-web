@@ -462,14 +462,14 @@
           "dateHeader": "📅 Thursday – 06/18/2026<br><span style='font-size:0.8em; font-weight:normal; opacity:0.75;'>Division B Semifinals (5th–8th Place)</span>",
           "games": [
             {
-              "label": "",
+              "label": "🥉 Div B 3rd Place",
               "home": "🦅 AL-HATEM FC",
               "homeScore": "0",
               "awayScore": "3",
               "away": "🐬 BLUE DOLPHINS FC"
             },
             {
-              "label": "",
+              "label": "🥇 Div B Championship",
               "home": "🐅 TIGERS FC",
               "homeScore": "3",
               "awayScore": "7",
@@ -480,44 +480,17 @@
       ]
     },
     {
-      "round": "Playoffs Week 2 - Finals",
+      "round": "Playoffs Week 2 - Final",
       "days": [
         {
           "dateHeader": "📅 Tuesday – 06/23/2026 <br><span style='font-size:0.9em; font-weight:normal; opacity:0.75;'>Division A Finals</span>",
           "games": [
             {
-              "label": "",
-              "home": "TBD",
+              "label": "🏆 CHAMPIONSHIP GAME",
+              "home": "🇪🇬 EGYPT FC",
               "homeScore": "8:30 PM",
               "awayScore": "TBD",
-              "away": "TBD"
-            },
-            {
-              "label": "",
-              "home": "TBD",
-              "homeScore": "9:30 PM",
-              "awayScore": "TBD",
-              "away": "TBD"
-            }
-          ],
-          "playoffDate": "TBD"
-        },
-        {
-          "dateHeader": "📅 Thursday – 06/25/2026 <br><span style='font-size:0.9em; font-weight:normal; opacity:0.75;'>Division B Finals</span>",
-          "games": [
-            {
-              "label": "",
-              "home": "TBD",
-              "homeScore": "8:30 PM",
-              "awayScore": "TBD",
-              "away": "TBD"
-            },
-            {
-              "label": "",
-              "home": "TBD",
-              "homeScore": "9:30 PM",
-              "awayScore": "TBD",
-              "away": "TBD"
+              "away": "🐊 ATLANTIC FC"
             }
           ],
           "playoffDate": "TBD"
